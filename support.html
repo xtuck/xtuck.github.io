@@ -1,73 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Technical Support</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LAN Share Pro - Technical Support</title>
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --line: #e2e8f0;
+        --primary: #0f766e;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(180deg, #edf2ff 0%, var(--bg) 25%, var(--bg) 100%);
+        color: var(--text);
+        line-height: 1.75;
+      }
+      .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 28px 20px 56px;
+      }
+      .hero {
+        background: linear-gradient(120deg, #0f766e 0%, #2563eb 100%);
+        color: #fff;
+        border-radius: 18px;
+        padding: 26px 24px;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.16);
+      }
+      .hero h1 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.3;
+      }
+      .hero p {
+        margin: 8px 0 0;
+        color: rgba(255, 255, 255, 0.92);
+      }
+      .card {
+        margin-top: 18px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 22px 20px;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 21px;
+        line-height: 1.35;
+      }
+      p {
+        margin: 8px 0;
+        color: var(--muted);
+      }
+      ul {
+        margin: 8px 0 0 20px;
+        padding: 0;
+        color: var(--muted);
+      }
+      li {
+        margin: 7px 0;
+      }
+      .badge {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 2px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.95);
+      }
+      .contact {
+        color: var(--primary);
+        font-weight: 700;
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 1px 6px;
+        color: #0f172a;
+      }
+      .small {
+        font-size: 13px;
+        color: #64748b;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <h1>LAN Share Pro - Technical Support</h1>
+        <p>Help for setup, LAN access, upload/download, and troubleshooting.</p>
+        <div class="badge">Updated: 2026-03-09</div>
+      </section>
 
-<style>
-body{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    margin:0;
-    padding:0;
-    background:#f5f5f7;
-    color:#333;
-}
+      <section class="card">
+        <h2>1. Contact Support</h2>
+        <p>
+          If you need help, contact us at:
+          <span class="contact">gxtuna@gmail.com</span>
+        </p>
+        <p>Please include your app version, macOS version, and a short problem description.</p>
+      </section>
 
-.container{
-    max-width:800px;
-    margin:80px auto;
-    background:white;
-    padding:40px;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.05);
-}
+      <section class="card">
+        <h2>2. Before You Contact Us</h2>
+        <ul>
+          <li>Confirm the service is running in the app Home page.</li>
+          <li>Confirm both devices are in the same local network (same LAN).</li>
+          <li>Use the displayed local URL (<code>http://IP:PORT</code>) or scan the QR code.</li>
+          <li>If temporary passcode is enabled, log in first.</li>
+          <li>Check app Logs for errors and include key lines in your email.</li>
+        </ul>
+      </section>
 
-h1{
-    margin-top:0;
-}
+      <section class="card">
+        <h2>3. Common Issues</h2>
+        <p><strong>Cannot open the web page from another device</strong></p>
+        <ul>
+          <li>Verify you are using the exact IP and port shown in the app.</li>
+          <li>Check local firewall settings on the host Mac.</li>
+          <li>Try refreshing the service status or restarting the service.</li>
+        </ul>
 
-.email{
-    font-size:18px;
-    margin-top:20px;
-}
+        <p><strong>Upload failed</strong></p>
+        <ul>
+          <li>Check available cache space and configured cache limit.</li>
+          <li>Reduce concurrent uploads in Settings if needed.</li>
+          <li>Check whether file names/paths contain unsupported patterns.</li>
+        </ul>
 
-.footer{
-    margin-top:40px;
-    font-size:14px;
-    color:#888;
-}
-</style>
-</head>
+        <p><strong>Download is slow or blocked</strong></p>
+        <ul>
+          <li>Check current download concurrency limits.</li>
+          <li>Try another browser on the same LAN.</li>
+          <li>Check network quality between the two devices.</li>
+        </ul>
+      </section>
 
-<body>
+      <section class="card">
+        <h2>4. HTTPS and Certificate Notes</h2>
+        <ul>
+          <li>The app supports optional HTTPS with a self-signed certificate.</li>
+          <li>Client devices may need to trust the certificate manually.</li>
+          <li>If HTTPS access fails, test HTTP first to isolate certificate issues.</li>
+        </ul>
+      </section>
 
-<div class="container">
+      <section class="card">
+        <h2>5. API Support</h2>
+        <p>
+          LAN Share Pro supports HTTP upload/download APIs for automation (for example, with <code>curl</code>).
+          For endpoint or usage issues, include your request sample and response status code when contacting support.
+        </p>
+      </section>
 
-<h1>Technical Support</h1>
+      <section class="card">
+        <h2>6. Security Reminder</h2>
+        <ul>
+          <li>Use temporary passcode protection when sharing in multi-user networks.</li>
+          <li>Avoid exposing your local service to the public internet unless you understand the risks.</li>
+          <li>Only share with trusted devices and networks.</li>
+        </ul>
+      </section>
 
-<p>
-Thank you for using our application. We are committed to providing a smooth and enjoyable experience for all users. If you encounter any issues, have questions, or would like to provide feedback, please feel free to contact us.
-</p>
-
-<p>
-Our support team will do our best to respond as quickly as possible.
-</p>
-
-<div class="email">
-📧 Contact Email:  
-<a href="mailto:gxtuna@gmail.com">gxtuna@gmail.com</a>
-</div>
-
-<p>
-When contacting support, please include as much detail as possible about your issue, such as your device model, system version, and a description of the problem. This will help us resolve your issue more efficiently.
-</p>
-
-<div class="footer">
-<p>Thank you for your support and for using our app.</p>
-</div>
-
-</div>
-
-</body>
+      <section class="card">
+        <h2>7. Feedback</h2>
+        <p>Feature requests and bug reports are welcome at <span class="contact">gxtuna@gmail.com</span>.</p>
+        <p class="small">© LAN Share Pro</p>
+      </section>
+    </main>
+  </body>
 </html>
