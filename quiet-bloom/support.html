@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Quiet Bloom 技术支持" />
+    <title>Quiet Bloom 技术支持</title>
+    <style>
+      :root {
+        --paper: #f6f7f9;
+        --surface: #ffffff;
+        --surface-warm: #f2f4f7;
+        --primary: #0f766e;
+        --sage: #4da46b;
+        --gold: #d8ad5c;
+        --line: #e5e7eb;
+        --text: #171717;
+        --secondary: #6b7280;
+        --tertiary: #9ca3af;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--paper);
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI",
+          Roboto, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.72;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      .page {
+        width: min(100%, 860px);
+        margin: 0 auto;
+        padding: 24px 20px 48px;
+      }
+
+      .topline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--text);
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      .mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+        background:
+          radial-gradient(circle at 32% 32%, #ffffff 0 14%, transparent 15%),
+          linear-gradient(135deg, #0f766e, #4da46b);
+        border: 1px solid rgba(15, 118, 110, 0.18);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--secondary);
+        font-size: 13px;
+      }
+
+      .nav a {
+        color: var(--secondary);
+        text-decoration: none;
+      }
+
+      .hero {
+        padding: 26px 0 20px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--primary);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      h1 {
+        max-width: 680px;
+        margin: 0;
+        color: var(--text);
+        font-size: clamp(32px, 7vw, 48px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .intro {
+        max-width: 680px;
+        margin: 14px 0 0;
+        color: var(--secondary);
+        font-size: 16px;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 30px;
+        padding: 5px 11px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--secondary);
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .pill.strong {
+        background: rgba(15, 118, 110, 0.08);
+        border-color: rgba(15, 118, 110, 0.16);
+        color: var(--primary);
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin: 20px 0;
+      }
+
+      .summary-item {
+        min-height: 112px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--surface);
+      }
+
+      .summary-item h2 {
+        margin: 0 0 6px;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      .summary-item p {
+        margin: 0;
+        color: var(--secondary);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .summary-item.gold {
+        border-color: rgba(216, 173, 92, 0.28);
+        background: rgba(216, 173, 92, 0.08);
+      }
+
+      .document {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--surface);
+      }
+
+      section {
+        padding: 20px;
+        border-top: 1px solid var(--line);
+      }
+
+      section:first-child {
+        border-top: 0;
+      }
+
+      section h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+        line-height: 1.25;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 8px 0;
+        color: var(--secondary);
+      }
+
+      ul {
+        margin: 8px 0 0;
+        padding-left: 20px;
+        color: var(--secondary);
+      }
+
+      li {
+        margin: 7px 0;
+      }
+
+      strong {
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .note {
+        margin-top: 12px;
+        padding: 12px 14px;
+        border-radius: 18px;
+        background: var(--surface-warm);
+        color: var(--secondary);
+        font-size: 14px;
+      }
+
+      .contact {
+        font-weight: 700;
+      }
+
+      .footer {
+        margin-top: 18px;
+        color: var(--tertiary);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      @media (max-width: 680px) {
+        .page {
+          padding: 18px 16px 40px;
+        }
+
+        .topline {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .nav {
+          flex-wrap: wrap;
+        }
+
+        .summary {
+          grid-template-columns: 1fr;
+        }
+
+        .summary-item {
+          min-height: auto;
+        }
+
+        section {
+          padding: 18px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="topline" aria-label="Quiet Bloom 页面导航">
+        <div class="brand">
+          <span class="mark" aria-hidden="true"></span>
+          <span>Quiet Bloom</span>
+        </div>
+        <nav class="nav">
+          <a href="privacy.html">隐私政策</a>
+          <span aria-hidden="true">/</span>
+          <a href="terms.html">服务条款</a>
+          <span aria-hidden="true">/</span>
+          <a href="support.html" aria-current="page">技术支持</a>
+        </nav>
+      </header>
+
+      <div class="hero">
+        <p class="eyebrow">Quiet Bloom: Coloring Book</p>
+        <h1>技术支持</h1>
+        <p class="intro">
+          如果你在使用 Quiet Bloom 时遇到问题，或者希望反馈体验、功能建议和订阅相关问题，
+          可以通过本页面提供的信息联系我们。
+        </p>
+        <div class="meta" aria-label="支持信息">
+          <span class="pill strong">更新日期：2026 年 5 月 25 日</span>
+          <span class="pill">支持邮箱：gxtuna@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="summary" aria-label="支持要点">
+        <article class="summary-item">
+          <h2>联系支持</h2>
+          <p>请发送邮件到 gxtuna@gmail.com，并尽量附上设备、系统版本和问题描述。</p>
+        </article>
+        <article class="summary-item gold">
+          <h2>订阅问题</h2>
+          <p>Plus 订阅、恢复购买和取消订阅均通过 Apple App Store 处理。</p>
+        </article>
+        <article class="summary-item">
+          <h2>本地数据</h2>
+          <p>涂色进度和广告解锁记录主要保存在你的设备本地。</p>
+        </article>
+      </div>
+
+      <article class="document">
+        <section>
+          <h2>1. 联系方式</h2>
+          <p>
+            技术支持邮箱：
+            <a class="contact" href="mailto:gxtuna@gmail.com">gxtuna@gmail.com</a>
+          </p>
+          <p>
+            我们会尽量及时回复。为了更快定位问题，请在邮件中说明你遇到的问题、发生步骤、设备型号、
+            iOS 版本、应用版本，以及必要时的截图或录屏。
+          </p>
+        </section>
+
+        <section>
+          <h2>2. 购买和订阅</h2>
+          <ul>
+            <li>Quiet Bloom Plus 订阅由 Apple App Store 处理。</li>
+            <li>如果购买后权益未刷新，请在应用会员页点击“恢复购买”或“刷新状态”。</li>
+            <li>如果你需要取消订阅，请前往 iOS 系统设置中的 Apple ID 订阅管理页面。</li>
+            <li>账单、退款和试用资格以 App Store 购买确认页和 Apple 处理结果为准。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. 广告解锁</h2>
+          <ul>
+            <li>广告解锁图案需要在广告可用时完整观看激励广告。</li>
+            <li>广告暂时不可用可能与地区、网络、广告库存或隐私同意状态有关。</li>
+            <li>Plus 用户可直接使用 Plus 图案，并去除横幅广告和插屏广告。</li>
+            <li>通过广告解锁的图案记录主要保存在完成解锁的设备本地。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. 涂色进度和作品</h2>
+          <ul>
+            <li>当前版本不需要注册账号，涂色进度主要保存在本机。</li>
+            <li>删除应用、清除本地数据或更换设备，可能会导致本地进度无法恢复。</li>
+            <li>如果保存或分享作品失败，请检查系统相册权限、存储空间和网络状态。</li>
+            <li>如果某张图案无法打开或显示异常，请把图案名称和问题截图一起发送给我们。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. 反馈建议</h2>
+          <p>
+            欢迎反馈你希望新增的图案类型、调色体验、会员权益、广告体验或其他改进建议。
+            你可以直接通过支持邮箱联系我们。
+          </p>
+          <p class="note">
+            关于数据处理方式，请阅读 <a href="privacy.html">隐私政策</a>；
+            关于订阅、广告解锁和使用规则，请阅读 <a href="terms.html">服务条款</a>。
+          </p>
+        </section>
+      </article>
+
+      <p class="footer">© 2026 Quiet Bloom。保留所有权利。</p>
+    </main>
+  </body>
+</html>
