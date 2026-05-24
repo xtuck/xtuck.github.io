@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Quiet Bloom 服务条款" />
+    <title>Quiet Bloom 服务条款</title>
+    <style>
+      :root {
+        --paper: #f6f7f9;
+        --surface: #ffffff;
+        --surface-warm: #f2f4f7;
+        --primary: #0f766e;
+        --sage: #4da46b;
+        --gold: #d8ad5c;
+        --line: #e5e7eb;
+        --text: #171717;
+        --secondary: #6b7280;
+        --tertiary: #9ca3af;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--paper);
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI",
+          Roboto, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.72;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      .page {
+        width: min(100%, 860px);
+        margin: 0 auto;
+        padding: 24px 20px 48px;
+      }
+
+      .topline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--text);
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      .mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+        background:
+          radial-gradient(circle at 32% 32%, #ffffff 0 14%, transparent 15%),
+          linear-gradient(135deg, #0f766e, #4da46b);
+        border: 1px solid rgba(15, 118, 110, 0.18);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--secondary);
+        font-size: 13px;
+      }
+
+      .nav a {
+        color: var(--secondary);
+        text-decoration: none;
+      }
+
+      .hero {
+        padding: 26px 0 20px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--primary);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      h1 {
+        max-width: 680px;
+        margin: 0;
+        color: var(--text);
+        font-size: clamp(32px, 7vw, 48px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .intro {
+        max-width: 680px;
+        margin: 14px 0 0;
+        color: var(--secondary);
+        font-size: 16px;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 30px;
+        padding: 5px 11px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--secondary);
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .pill.strong {
+        background: rgba(15, 118, 110, 0.08);
+        border-color: rgba(15, 118, 110, 0.16);
+        color: var(--primary);
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin: 20px 0;
+      }
+
+      .summary-item {
+        min-height: 112px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--surface);
+      }
+
+      .summary-item.gold {
+        border-color: rgba(216, 173, 92, 0.28);
+        background: rgba(216, 173, 92, 0.08);
+      }
+
+      .summary-item h2 {
+        margin: 0 0 6px;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      .summary-item p {
+        margin: 0;
+        color: var(--secondary);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .document {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--surface);
+      }
+
+      section {
+        padding: 20px;
+        border-top: 1px solid var(--line);
+      }
+
+      section:first-child {
+        border-top: 0;
+      }
+
+      section h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+        line-height: 1.25;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 8px 0;
+        color: var(--secondary);
+      }
+
+      ul {
+        margin: 8px 0 0;
+        padding-left: 20px;
+        color: var(--secondary);
+      }
+
+      li {
+        margin: 7px 0;
+      }
+
+      strong {
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .note {
+        margin-top: 12px;
+        padding: 12px 14px;
+        border-radius: 18px;
+        background: var(--surface-warm);
+        color: var(--secondary);
+        font-size: 14px;
+      }
+
+      .contact {
+        font-weight: 700;
+      }
+
+      .footer {
+        margin-top: 18px;
+        color: var(--tertiary);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      @media (max-width: 680px) {
+        .page {
+          padding: 18px 16px 40px;
+        }
+
+        .topline {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .summary {
+          grid-template-columns: 1fr;
+        }
+
+        .summary-item {
+          min-height: auto;
+        }
+
+        section {
+          padding: 18px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="topline" aria-label="Quiet Bloom 法律信息导航">
+        <div class="brand">
+          <span class="mark" aria-hidden="true"></span>
+          <span>Quiet Bloom</span>
+        </div>
+        <nav class="nav">
+          <a href="privacy.html">隐私政策</a>
+          <span aria-hidden="true">/</span>
+          <a href="terms.html" aria-current="page">服务条款</a>
+        </nav>
+      </header>
+
+      <div class="hero">
+        <p class="eyebrow">Quiet Bloom: Coloring Book</p>
+        <h1>服务条款</h1>
+        <p class="intro">
+          本条款说明你可以如何使用 Quiet Bloom，包括免费图案、广告解锁图案和 Quiet Bloom Plus 订阅。
+        </p>
+        <div class="meta" aria-label="条款信息">
+          <span class="pill strong">生效日期：2026 年 5 月 25 日</span>
+          <span class="pill">联系邮箱：gxtuna@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="summary" aria-label="条款要点">
+        <article class="summary-item">
+          <h2>可以免费开始</h2>
+          <p>部分涂色卡可免费使用，部分图案可以通过观看激励广告在本机解锁。</p>
+        </article>
+        <article class="summary-item gold">
+          <h2>Plus 订阅权益</h2>
+          <p>Quiet Bloom Plus 可解锁 Plus 图案，并在有效期内去除横幅广告和插屏广告。</p>
+        </article>
+        <article class="summary-item">
+          <h2>进度本地保存</h2>
+          <p>涂色进度和广告解锁记录主要保存在你的设备上，除非后续明确加入云同步功能。</p>
+        </article>
+      </div>
+
+      <article class="document">
+        <section>
+          <h2>1. 接受条款</h2>
+          <p>
+            本服务条款适用于 Quiet Bloom: Coloring Book 及 Quiet Bloom Plus
+            相关功能。你下载、访问或使用本应用，即表示你同意本条款。
+          </p>
+          <p>
+            如果你通过 Apple App Store 下载本应用，你对本应用的使用也受 Apple
+            适用条款约束。在未提供单独自定义最终用户许可协议的情况下，Apple 要求适用时将使用其标准许可应用最终用户许可协议。
+          </p>
+        </section>
+
+        <section>
+          <h2>2. 应用功能</h2>
+          <p>
+            Quiet Bloom 提供数字涂色图案、调色板、本地进度保存、作品完成流程、可用时的保存或分享功能、
+            广告解锁功能，以及可选的 Plus 订阅服务。
+          </p>
+          <p>
+            为了提升体验、满足平台要求或维持应用运行，我们可能会更新、改进、移除或限制部分功能。
+          </p>
+        </section>
+
+        <section>
+          <h2>3. 免费图案与广告解锁</h2>
+          <ul>
+            <li>部分图案对所有用户免费开放。</li>
+            <li>部分图案可在广告可用时，通过观看激励广告解锁。</li>
+            <li>激励广告解锁记录保存在完成解锁的设备本地。</li>
+            <li>广告是否可用可能受地区、网络、设备设置、广告库存或平台规则影响。</li>
+            <li>如果广告暂时不可用，你可以稍后再试，或在可用时使用 Plus 订阅权益。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Quiet Bloom Plus</h2>
+          <p>
+            Quiet Bloom Plus 是可选订阅服务。订阅有效期内，Plus 用户可以使用 Plus 图案，
+            并去除横幅广告和插屏广告。激励广告可能仍会在你主动选择广告解锁相关功能时出现。
+          </p>
+          <ul>
+            <li>你可以选择月会员或年会员，具体订阅方案以应用内和 App Store 购买确认页展示为准。</li>
+            <li>年会员可能在 App Store 提供免费试用，具体以购买确认页展示为准。</li>
+            <li>实际价格、税费、币种、试用资格和订阅条件以 App Store 购买确认页显示为准。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. 计费、续订与取消</h2>
+          <p>
+            订阅通过你的 Apple ID 由 Apple 计费。除非你在当前订阅周期或试用期结束前取消，
+            订阅会按照购买时展示的方案和 Apple 规则自动续订。
+          </p>
+          <ul>
+            <li>你可以在 Apple ID 的订阅管理中管理或取消订阅。</li>
+            <li>删除本应用不会自动取消订阅。</li>
+            <li>退款、账单问题和取消处理由 Apple 负责。</li>
+            <li>取消订阅后，Plus 权益通常会保留到已付费周期结束。</li>
+          </ul>
+          <p class="note">
+            本应用会展示从 App Store 获取的商品信息。确认付款前，请以系统购买确认页展示的信息为准。
+          </p>
+        </section>
+
+        <section>
+          <h2>6. 使用规则</h2>
+          <p>你同意不会：</p>
+          <ul>
+            <li>以违反适用法律或平台规则的方式使用本应用。</li>
+            <li>绕过付费、订阅、广告、解锁规则或技术保护措施。</li>
+            <li>逆向工程、复制、再分发或商业化利用本应用内容，法律允许的情况除外。</li>
+            <li>以侵犯他人权利或误导所有权的方式使用导出的图片。</li>
+            <li>干扰本应用服务、广告 SDK、购买服务或平台系统的正常运行。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>7. 内容与知识产权</h2>
+          <p>
+            本应用中的图案模板、界面、代码、设计、文本和其他材料归我们或相关授权方所有，
+            并受适用知识产权法律保护。
+          </p>
+          <p>
+            你可以将本应用用于个人、非商业的涂色和娱乐。除法律允许外，任何更广泛的使用、再分发、
+            转售或提取本应用内容，均需事先获得我们的许可。
+          </p>
+        </section>
+
+        <section>
+          <h2>8. 第三方与平台服务</h2>
+          <p>
+            本应用可能使用第三方或平台服务，包括 Google Mobile Ads、Google 隐私同意工具、
+            Apple App Store 订阅服务、系统分享功能和操作系统服务。你使用这些服务时，
+            也可能受其各自条款和政策约束。
+          </p>
+        </section>
+
+        <section>
+          <h2>9. 免责声明</h2>
+          <p>
+            本应用按“现状”和“可用”基础提供。我们会尽力提供安静、稳定的涂色体验，
+            但不保证本应用始终不中断、无错误，或适用于所有设备、地区和系统版本。
+          </p>
+          <p>
+            广告可用性、App Store 商品可用性、试用资格和订阅状态可能依赖我们无法直接控制的平台系统。
+          </p>
+        </section>
+
+        <section>
+          <h2>10. 责任限制</h2>
+          <p>
+            在适用法律允许的最大范围内，我们不对因你使用或无法使用本应用而产生的间接、附带、特殊、
+            后果性或惩罚性损害负责，也不对数据、收益、商誉或其他无形损失负责。
+          </p>
+        </section>
+
+        <section>
+          <h2>11. 条款更新</h2>
+          <p>
+            我们可能会根据应用功能变化、法律要求、订阅变化或平台要求更新本服务条款。
+            最新版本会展示在本页面。
+          </p>
+        </section>
+
+        <section>
+          <h2>12. 联系我们</h2>
+          <p>
+            如果你对本服务条款有任何问题，可以通过
+            <a class="contact" href="mailto:gxtuna@gmail.com">gxtuna@gmail.com</a>
+            联系我们。
+          </p>
+          <p>
+            关于数据处理方式，请同时阅读我们的 <a href="privacy.html">隐私政策</a>。
+          </p>
+        </section>
+      </article>
+
+      <p class="footer">© 2026 Quiet Bloom。保留所有权利。</p>
+    </main>
+  </body>
+</html>

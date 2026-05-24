@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Quiet Bloom 隐私政策" />
+    <title>Quiet Bloom 隐私政策</title>
+    <style>
+      :root {
+        --paper: #f6f7f9;
+        --surface: #ffffff;
+        --surface-warm: #f2f4f7;
+        --primary: #0f766e;
+        --sage: #4da46b;
+        --gold: #d8ad5c;
+        --line: #e5e7eb;
+        --text: #171717;
+        --secondary: #6b7280;
+        --tertiary: #9ca3af;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--paper);
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI",
+          Roboto, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.72;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      .page {
+        width: min(100%, 860px);
+        margin: 0 auto;
+        padding: 24px 20px 48px;
+      }
+
+      .topline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--text);
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      .mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+        background:
+          radial-gradient(circle at 32% 32%, #ffffff 0 14%, transparent 15%),
+          linear-gradient(135deg, #0f766e, #4da46b);
+        border: 1px solid rgba(15, 118, 110, 0.18);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--secondary);
+        font-size: 13px;
+      }
+
+      .nav a {
+        color: var(--secondary);
+        text-decoration: none;
+      }
+
+      .hero {
+        padding: 26px 0 20px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--primary);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      h1 {
+        max-width: 680px;
+        margin: 0;
+        color: var(--text);
+        font-size: clamp(32px, 7vw, 48px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .intro {
+        max-width: 680px;
+        margin: 14px 0 0;
+        color: var(--secondary);
+        font-size: 16px;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 30px;
+        padding: 5px 11px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--secondary);
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .pill.strong {
+        background: rgba(15, 118, 110, 0.08);
+        border-color: rgba(15, 118, 110, 0.16);
+        color: var(--primary);
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin: 20px 0;
+      }
+
+      .summary-item {
+        min-height: 112px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--surface);
+      }
+
+      .summary-item h2 {
+        margin: 0 0 6px;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      .summary-item p {
+        margin: 0;
+        color: var(--secondary);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .document {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--surface);
+      }
+
+      section {
+        padding: 20px;
+        border-top: 1px solid var(--line);
+      }
+
+      section:first-child {
+        border-top: 0;
+      }
+
+      section h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+        line-height: 1.25;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 8px 0;
+        color: var(--secondary);
+      }
+
+      ul {
+        margin: 8px 0 0;
+        padding-left: 20px;
+        color: var(--secondary);
+      }
+
+      li {
+        margin: 7px 0;
+      }
+
+      strong {
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .note {
+        margin-top: 12px;
+        padding: 12px 14px;
+        border-radius: 18px;
+        background: var(--surface-warm);
+        color: var(--secondary);
+        font-size: 14px;
+      }
+
+      .contact {
+        font-weight: 700;
+      }
+
+      .footer {
+        margin-top: 18px;
+        color: var(--tertiary);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      @media (max-width: 680px) {
+        .page {
+          padding: 18px 16px 40px;
+        }
+
+        .topline {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .summary {
+          grid-template-columns: 1fr;
+        }
+
+        .summary-item {
+          min-height: auto;
+        }
+
+        section {
+          padding: 18px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="topline" aria-label="Quiet Bloom 法律信息导航">
+        <div class="brand">
+          <span class="mark" aria-hidden="true"></span>
+          <span>Quiet Bloom</span>
+        </div>
+        <nav class="nav">
+          <a href="privacy.html" aria-current="page">隐私政策</a>
+          <span aria-hidden="true">/</span>
+          <a href="terms.html">服务条款</a>
+        </nav>
+      </header>
+
+      <div class="hero">
+        <p class="eyebrow">Quiet Bloom: Coloring Book</p>
+        <h1>隐私政策</h1>
+        <p class="intro">
+          Quiet Bloom 是一款安静、轻量的数字涂色应用。我们会尽量让涂色进度留在你的设备上；
+          广告、隐私同意和订阅购买则由下文说明的平台服务处理。
+        </p>
+        <div class="meta" aria-label="政策信息">
+          <span class="pill strong">生效日期：2026 年 5 月 25 日</span>
+          <span class="pill">联系邮箱：gxtuna@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="summary" aria-label="隐私要点">
+        <article class="summary-item">
+          <h2>无需注册账号</h2>
+          <p>当前版本不要求你创建 Quiet Bloom 账号，也不提供云端账号体系。</p>
+        </article>
+        <article class="summary-item">
+          <h2>作品进度本地保存</h2>
+          <p>涂色进度、调色板、已解锁图案和偏好设置主要保存在你的设备上。</p>
+        </article>
+        <article class="summary-item">
+          <h2>广告与订阅服务</h2>
+          <p>Google 广告服务和 Apple 内购服务可能会处理广告、同意状态和订阅相关数据。</p>
+        </article>
+      </div>
+
+      <article class="document">
+        <section>
+          <h2>1. 适用范围</h2>
+          <p>
+            本隐私政策适用于 Quiet Bloom: Coloring Book 及 Quiet Bloom Plus
+            相关功能。下文中的“本应用”“我们”均指 Quiet Bloom。
+          </p>
+        </section>
+
+        <section>
+          <h2>2. 本应用在本地保存的信息</h2>
+          <p>
+            为了让你可以继续上次的涂色进度，本应用会在你的设备本地保存必要数据，包括：
+          </p>
+          <ul>
+            <li>涂色进度、作品完成状态和最近打开的作品。</li>
+            <li>已选择的颜色、调色板、提示次数、画布相关设置。</li>
+            <li>收藏、分类选择、应用偏好设置和本地缓存。</li>
+            <li>通过激励广告解锁的图案记录。</li>
+            <li>从 App Store 获取的 Plus 订阅权益状态，例如商品标识、有效状态和到期时间。</li>
+          </ul>
+          <p>
+            当前版本不运营 Quiet Bloom 自有账号系统，也不会把你的涂色作品上传到我们的云端服务器。
+          </p>
+        </section>
+
+        <section>
+          <h2>3. 照片保存与分享</h2>
+          <p>
+            如果你主动使用导出、保存或分享作品功能，本应用可能会请求系统所需权限，以便将图片保存到相册或通过系统分享面板分享。
+            这些操作只会在你主动触发相关功能时发生。
+          </p>
+        </section>
+
+        <section>
+          <h2>4. 广告与隐私同意</h2>
+          <p>
+            Quiet Bloom 使用 Google Mobile Ads 向非 Plus 用户展示广告，包括横幅广告、插屏广告和激励广告。
+            在需要的地区，本应用也可能使用 Google User Messaging Platform 请求和管理广告隐私同意状态。
+          </p>
+          <ul>
+            <li>Plus 用户不会看到横幅广告和插屏广告。</li>
+            <li>当用户选择通过观看广告解锁指定图案时，会使用激励广告。</li>
+            <li>
+              广告 SDK 可能会根据你的地区、系统设置和同意状态处理设备标识符、广告互动信息、粗略位置、诊断信息和同意选择。
+            </li>
+          </ul>
+          <p>
+            你可以查看 Google 关于广告隐私的说明：
+            <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>。
+          </p>
+        </section>
+
+        <section>
+          <h2>5. App Store 内购与订阅</h2>
+          <p>
+            Quiet Bloom Plus 订阅由 Apple 通过 App Store 处理。我们会接收用于解锁 Plus
+            权益的必要订阅状态，例如商品标识、权益状态以及可用时的到期时间。
+          </p>
+          <p>
+            付款信息、账单记录、退款和订阅管理由 Apple 根据其条款和隐私政策处理。
+          </p>
+        </section>
+
+        <section>
+          <h2>6. 我们如何使用信息</h2>
+          <ul>
+            <li>在本地保存你的涂色进度、偏好设置和作品状态。</li>
+            <li>正确判断免费图案、广告解锁图案和 Plus 图案的访问权限。</li>
+            <li>向非 Plus 用户展示广告，并为 Plus 用户去除横幅广告和插屏广告。</li>
+            <li>处理购买、恢复购买和刷新 Plus 订阅状态。</li>
+            <li>在你联系我们时，用于排查崩溃、广告、订阅或其他支持问题。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>7. 信息共享</h2>
+          <p>
+            我们不会出售你的个人信息。为了运行本应用，部分信息可能由以下服务提供方处理：
+          </p>
+          <ul>
+            <li>Google Mobile Ads 及 Google 隐私同意工具，用于广告展示和隐私选择。</li>
+            <li>Apple App Store 服务，用于内购、订阅、退款和订阅状态管理。</li>
+            <li>设备操作系统服务，用于分享、保存、诊断和系统权限处理。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>8. 你的选择与控制</h2>
+          <ul>
+            <li>你可以不注册账号，直接使用免费图案。</li>
+            <li>你可以自行选择是否观看激励广告来解锁支持广告解锁的图案。</li>
+            <li>你可以在 iOS 系统设置中管理跟踪、广告个性化和相关隐私设置。</li>
+            <li>你可以在 Apple ID 的订阅管理中管理或取消订阅。</li>
+            <li>你可以通过删除本应用来移除设备上的本地应用数据。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>9. 儿童隐私</h2>
+          <p>
+            Quiet Bloom 面向普通用户提供数字涂色体验。当前版本不通过自有账号或云服务主动收集儿童个人信息。
+            如果你认为儿童向我们提供了个人信息，请通过下方邮箱联系我们，我们会采取合理处理措施。
+          </p>
+        </section>
+
+        <section>
+          <h2>10. 安全与保留</h2>
+          <p>
+            本地应用数据会保留在你的设备上，直到你清除数据、删除应用或系统清理相关数据。
+            订阅记录由 Apple 管理；广告和同意记录由相应服务提供方根据其政策保留。
+          </p>
+        </section>
+
+        <section>
+          <h2>11. 政策更新</h2>
+          <p>
+            我们可能会根据功能变化、法律要求、广告 SDK 变化或平台要求更新本隐私政策。
+            最新版本会展示在本页面。
+          </p>
+        </section>
+
+        <section>
+          <h2>12. 联系我们</h2>
+          <p>
+            如果你对本隐私政策有任何问题，可以通过
+            <a class="contact" href="mailto:gxtuna@gmail.com">gxtuna@gmail.com</a>
+            联系我们。
+          </p>
+          <p class="note">
+            本页面用于说明当前版本 Quiet Bloom 的数据处理方式。如果后续新增账号、云同步、统计分析或新的分享功能，
+            我们会相应更新本隐私政策。
+          </p>
+        </section>
+      </article>
+
+      <p class="footer">© 2026 Quiet Bloom。保留所有权利。</p>
+    </main>
+  </body>
+</html>
