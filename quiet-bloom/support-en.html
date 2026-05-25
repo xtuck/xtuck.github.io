@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Quiet Bloom Support" />
+    <title>Quiet Bloom Support</title>
+    <style>
+      :root {
+        --paper: #f6f7f9;
+        --surface: #ffffff;
+        --primary: #0f766e;
+        --gold: #d8ad5c;
+        --line: #e5e7eb;
+        --text: #171717;
+        --secondary: #6b7280;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.72;
+      }
+      a {
+        color: var(--primary);
+        text-underline-offset: 3px;
+      }
+      .page {
+        width: min(100%, 860px);
+        margin: 0 auto;
+        padding: 24px 20px 48px;
+      }
+      .topline {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+      }
+      .mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 12px;
+        background:
+          radial-gradient(circle at 32% 32%, #fff 0 14%, transparent 15%),
+          linear-gradient(135deg, #0f766e, #4da46b);
+      }
+      .nav {
+        display: flex;
+        gap: 10px;
+        color: var(--secondary);
+        font-size: 13px;
+      }
+      .nav a {
+        color: var(--secondary);
+        text-decoration: none;
+      }
+      .hero {
+        padding: 26px 0 20px;
+        border-bottom: 1px solid var(--line);
+      }
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--primary);
+        font-size: 13px;
+        font-weight: 700;
+      }
+      h1 {
+        max-width: 680px;
+        margin: 0;
+        font-size: clamp(32px, 7vw, 48px);
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+      .intro {
+        max-width: 680px;
+        margin: 14px 0 0;
+        color: var(--secondary);
+        font-size: 16px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin: 20px 0;
+      }
+      .card {
+        min-height: 148px;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--surface);
+      }
+      .card.gold {
+        border-color: rgba(216, 173, 92, 0.28);
+        background: rgba(216, 173, 92, 0.08);
+      }
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 18px;
+      }
+      .card p,
+      li,
+      p {
+        color: var(--secondary);
+      }
+      .document {
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--surface);
+      }
+      ul {
+        margin: 8px 0 0;
+        padding-left: 20px;
+      }
+      footer {
+        padding: 24px 0 0;
+        color: var(--secondary);
+        font-size: 13px;
+      }
+      @media (max-width: 680px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+        .topline {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <div class="topline">
+        <div class="brand"><span class="mark"></span><span>Quiet Bloom</span></div>
+        <nav class="nav">
+          <a href="privacy-en.html">Privacy</a>
+          <span>/</span>
+          <a href="terms-en.html">Terms</a>
+          <span>/</span>
+          <a href="support.html">中文</a>
+        </nav>
+      </div>
+
+      <header class="hero">
+        <p class="eyebrow">Support</p>
+        <h1>Help for Quiet Bloom.</h1>
+        <p class="intro">
+          If you need help with coloring pages, ads, Plus subscriptions, or
+          local progress, contact us by email.
+        </p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:gxtuna@gmail.com">gxtuna@gmail.com</a></p>
+          <p>Please include your device model, iOS version, and app version when possible.</p>
+        </article>
+        <article class="card gold">
+          <h2>Plus</h2>
+          <p>Subscriptions are managed through your App Store account settings.</p>
+        </article>
+        <article class="card">
+          <h2>Local progress</h2>
+          <p>Artwork progress is stored on your device and may be removed if local app data is cleared.</p>
+        </article>
+      </div>
+
+      <section class="document">
+        <h2>Common Topics</h2>
+        <ul>
+          <li>Use Restore Purchases in the Plus page if your subscription does not appear.</li>
+          <li>If rewarded ads are unavailable, try again later or check your network and privacy settings.</li>
+          <li>For App Store refunds or billing questions, use Apple purchase support.</li>
+          <li>Privacy Policy and Terms of Use are linked from this page and inside the app.</li>
+        </ul>
+      </section>
+
+      <footer>Quiet Bloom · Calm digital coloring</footer>
+    </main>
+  </body>
+</html>
